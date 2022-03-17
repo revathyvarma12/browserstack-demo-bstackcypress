@@ -1,0 +1,17 @@
+
+node {
+    
+stage('Pull code from Github') {
+        
+            git branch: 'br-develop', changelog: false, poll: false, url: 'https://github.com/revathyvarma12/browserstack-demo-bstackcypress'
+        
+    }
+
+browserstack(credentialsId: '07f80880-43ec-4958-91e0-92e3104f3606') {
+    
+    sh 'npx browserstack-cypress run --sync --username revathyvarma_DwJ8pQ --key Gr1FoxfTAE2Mj8FKJsXm'
+}
+
+
+
+}

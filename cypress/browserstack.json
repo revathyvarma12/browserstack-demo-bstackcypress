@@ -1,0 +1,43 @@
+{
+  "auth": {
+    "username": "abc",
+    "access_key": "123"
+  },
+
+  "browsers": [{
+      "browser": "chrome",
+      "os": "Windows 10",
+      "versions": ["latest", "latest - 1"]
+    },
+    {
+      "browser": "firefox",
+      "os": "OS X Mojave",
+      "versions": ["latest", "latest - 1"]
+    },
+    {
+      "browser": "edge",
+      "os": "OS X Catalina",
+      "versions": ["latest"]
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "config.json",
+    "cypress_version": "9",
+    "project_name": "MyCypress",
+    "build_name": "Build no. 1",
+    "parallels": "5",
+    "integrationFolder": ".",
+  "testFiles": "**.spec.js",
+  "system_env_vars": ["BROWSERSTACK_USERNAME","BROWSERSTACK_ACCESS_KEY"]
+  
+  
+  
+  },
+
+  
+  "connection_settings": {
+    "local": true,
+    "local_identifier": "CypressLocalConnection1"
+  }
+}
+

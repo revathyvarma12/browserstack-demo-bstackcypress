@@ -1,0 +1,6 @@
+{
+  "defaultCommandTimeout": 2000,
+  "video": true,
+  "integrationFolder": ".",
+  "testFiles": "**.spec.js"
+}
